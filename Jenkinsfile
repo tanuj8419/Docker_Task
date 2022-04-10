@@ -17,8 +17,8 @@ node {
     }
    stage('Push image'){
         sh 'docker login -u "tanuj8419" -p "Tanuj@2303" docker.io'
-        sh 'docker tag flask:latest tanuj8419/dockerhub:myimagepush'
-        sh 'docker push tanuj8419/dockerhub:myimagepush'
+        sh 'docker tag flask:latest tanuj8419/flask:myimagepush'
+        sh 'docker push tanuj8419/flask:myimagepush'
    }
 
 }
