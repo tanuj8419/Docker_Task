@@ -12,7 +12,7 @@ node {
          sh "docker build -t flask ."
    }
    stage('Test image'){
-        sh "docker run -d -p 80:5000 flask"
+        sh "docker run -p 80:5000 flask"
         sh 'echo "Container running"'
     }
    stage('Push image'){
